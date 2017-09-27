@@ -128,8 +128,7 @@ module ::Middleman
 
       scripts =
         libs.map do |lib|
-          script = File.join(source_dir, 'javascripts', lib)
-          "<script src=\"#{script}\" /></script>"
+          "<script src=\"/gibberish/javascripts/#{script}\" /></script>"
         end
 
       template =
