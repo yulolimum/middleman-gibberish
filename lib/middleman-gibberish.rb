@@ -130,17 +130,7 @@ module ::Middleman
         libs.map do |lib|
           script = File.join(source_dir, 'javascripts', lib)
 
-          #if test(?s, script)
-          if false
-            javascript_include_tag(lib)
-          else
-            src = cdn + lib
-
-            log(:warn, "using cdn hosted #{ lib.inspect } @ #{ src.inspect }")
-            log(:warn, "- add source/javascripts/#{ lib } to shut this up - a symlink link will do")
-
-            "<script src='%s' type='text/javascript'></script>" % src
-          end
+          javascript_include_tag(script)
         end
 
       template =
