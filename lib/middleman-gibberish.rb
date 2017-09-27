@@ -128,7 +128,7 @@ module ::Middleman
 
       scripts =
         libs.map do |lib|
-          "<script src=\"/gibberish/javascripts/#{script}\" /></script>"
+          "<script src=\"/gibberish/javascripts/#{lib}\" /></script>"
         end
 
       template =
